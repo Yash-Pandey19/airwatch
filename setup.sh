@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
-# Author: Ismail Dawoodjee
-# Date: 24-Aug-2021
 # Purpose: To set up containers to run the Great Expectations
 # data pipeline on Airflow. Run this script using `source setup.sh`. 
 
