@@ -24,7 +24,7 @@ If specific settings are required, put the variables into the appropriate
 Datasource Python scripts.
 """
 VALIDATION_ACTION_NAME = "email_on_validation_failure"
-NOTIFY_ON = "failure"  # possible values: "all", "failure", "success"
+NOTIFY_ON = "all"  # possible values: "all", "failure", "success"
 USE_TLS = True
 USE_SSL = False
 SMTP_ADDRESS = os.environ.get("SMTP_ADDRESS")

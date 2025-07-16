@@ -20,7 +20,7 @@ action_list:
   - name: email_on_validation_failure
     action:
       class_name: EmailAction
-      notify_on: failure
+      notify_on: all
       notify_with:
       use_tls: true
       use_ssl: false
