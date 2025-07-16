@@ -1,0 +1,12 @@
+.venv
+.vscode
+.metals
+.env
+__pycache__
+logs
+temp
+!filesystem/stage/temp
+plugins
+*.csv
+*.parquet
+*.log*

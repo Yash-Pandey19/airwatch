@@ -1,0 +1,9 @@
+black==22.6.0
+fastparquet==0.8.3
+great_expectations==0.16.15
+airflow-provider-great-expectations==0.2.7
+pip-chill==1.0.1
+psycopg2-binary==2.9.3
+pyarrow==9.0.0
+python-dotenv==0.20.0
+sqlalchemy==1.4.40

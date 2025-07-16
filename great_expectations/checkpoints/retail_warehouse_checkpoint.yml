@@ -1,0 +1,46 @@
+name: retail_warehouse_checkpoint
+config_version: 1.0
+template_name:
+module_name: great_expectations.checkpoint
+class_name: Checkpoint
+run_name_template:
+expectation_suite_name:
+batch_request:
+action_list:
+  - name: store_validation_result
+    action:
+      class_name: StoreValidationResultAction
+  - name: store_evaluation_params
+    action:
+      class_name: StoreEvaluationParametersAction
+  - name: update_data_docs
+    action:
+      class_name: UpdateDataDocsAction
+      site_names: []
+  - name: email_on_validation_failure
+    action:
+      class_name: EmailAction
+      notify_on: failure
+      notify_with:
+      use_tls: true
+      use_ssl: false
+      renderer:
+        module_name: great_expectations.render.renderer.email_renderer
+        class_name: EmailRenderer
+      smtp_address: ${SMTP_ADDRESS}
+      smtp_port: ${SMTP_PORT}
+      sender_login: ${SENDER_LOGIN}
+      sender_password: ${SENDER_PASSWORD}
+      receiver_emails: ${RECEIVER_EMAILS}
+evaluation_parameters: {}
+runtime_configuration: {}
+validations:
+  - batch_request:
+      datasource_name: retail_warehouse
+      data_connector_name: default_inferred_data_connector_name
+      data_asset_name: stage.retail_profiling
+      data_connector_query:
+        index: -1
+    expectation_suite_name: retail_warehouse_suite
+profilers: []
+ge_cloud_id:
