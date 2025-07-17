@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PROJECT_NAME="greatex"
+PROJECT_NAME="airflow_gex_data_pipeline"
 CONTAINER_NAME="${PROJECT_NAME}_airflow-webserver_1"
 
 # Add source database connection
