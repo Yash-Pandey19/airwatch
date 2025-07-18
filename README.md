@@ -20,7 +20,7 @@ This project implements a complete data pipeline for retail e-commerce data proc
 
 ## 🏗️ Architecture
 
-![Airflow GeX Data Pipeline Architecture](assets/Airflow%20GeX%20Data%20Pipeline.webp)
+![Airflow GeX Data Pipeline Architecture](Airflow%20GeX%20Data%20Pipeline.webp)
 
 ### Pipeline Stages
 
