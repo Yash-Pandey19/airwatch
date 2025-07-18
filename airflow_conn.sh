@@ -1,7 +1,9 @@
+
+
 #!/bin/bash
 
 PROJECT_NAME="airflow_gex_data_pipeline"
-CONTAINER_NAME="${PROJECT_NAME}_airflow-webserver_1"
+CONTAINER_NAME="${PROJECT_NAME}-airflow-webserver-1"
 
 # Add source database connection
 docker exec -it $CONTAINER_NAME \

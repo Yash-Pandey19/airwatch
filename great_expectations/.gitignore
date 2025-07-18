@@ -1,1 +1,8 @@
-uncommitted/
+uncommitted/*
+notebooks
+plugins
+!uncommitted/config_variables.yml
+*
+notebooks
+plugins
+!uncommitted/config_variables.yml
